@@ -1,0 +1,122 @@
+/* Reset and font */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+/* Main layout container */
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Top section layout */
+.top-section {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Image styling */
+.image-box img {
+  width: 400px;
+  height: 300px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Price and booking */
+.price-box {
+  background: #e0e0e0;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 280px;
+  height: 200px;
+}
+
+.price-box h2 {
+  margin-top: 0;
+}
+
+.tags {
+  display: flex;
+  gap: 10px; /* spacing between the items */
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+}
+.tags p {
+  margin: 0;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* Button */
+.price-box button {
+  margin-top: 10px;
+  background: #800000;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.price-box small {
+  display: block;
+  color: gray;
+  font-size: 10px;
+}
+
+/* Thumbnails section */
+.thumbnails {
+  display: flex;
+  gap: 10px;
+  margin: 20px ;
+}
+.thumbnails img {
+  width: 50px;
+  height: 50px;
+  background: #ddd;
+  border-radius: 5px;
+}
+
+/* Section title */
+.section-title {
+  color: white;
+  background-color: #800000;
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Overview grid */
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));  
+  gap: 10px;
+  margin: 20px 0;
+}
+.card {
+  background: #7893ed;;
+  padding: 10px;
+  border-radius: 8px;
+  height: 60px;
+}
+
+/* Description box */
+.description-box {
+  background: #f3f3f3;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+  height: 100px;
+}
