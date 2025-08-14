@@ -1,0 +1,143 @@
+/* Reset margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body style */
+body {
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+}
+
+/* Layout for login and image */
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  margin: 110px;
+  
+}
+h2{
+    font-size: 1;
+}
+/* Left side: Login form */
+.login-box {
+  flex: 1;
+  min-width: 300px;
+  height: auto;
+  background:  #b31217;
+  color: black;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+/* Header with login and sign up */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px;
+  margin-left:200px;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.signup {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: auto;
+}
+
+/* Input box styling */
+.input-group {
+  background: #d3d3d3;
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.input-group input {
+  border: none;
+  background: transparent;
+  margin-left: 10px;
+  width: 100%;
+  font-size: 16px;
+}
+
+/* Radio buttons for role */
+.role-select {
+  display: flex;
+  gap: 8rem;
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+/* Login buttons */
+.btn {
+  background: #d3d3d3;
+  border: none;
+  padding: 12px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+/* Google login */
+.google {
+  background: #d3d3d3;
+}
+
+/* Divider text */
+.divider {
+  text-align: center;
+  margin: 10px 0;
+  color: #fff;
+}
+
+/* Right side: image and text */
+.image-box {
+  flex: 1;
+  min-width: 300px;
+  background: #111;
+  color: white;
+  /* padding: 40px 20px; */
+  text-align: center;
+  border-radius: 15px;
+  position: relative;
+  /* margin: 10px; */
+}
+
+.image-box img {
+  max-width: 100%;
+  width: 100%;
+  /* margin-top: 20px; */
+}
+
+/* ✅ Responsive for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .login-box,
+  .image-box {
+    border-radius: 0;
+    /* padding: 30px 20px; */
+  }
+
+  .image-box img {
+    max-width: 200px;
+  }
+}

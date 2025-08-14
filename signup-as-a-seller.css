@@ -1,0 +1,99 @@
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Center the form in the page */
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Main form container */
+.form-container {
+  background: #2d1bb0; /* Purple background */
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+  color: white;
+}
+
+/* Title */
+h2 {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+/* Subtitle text */
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+/* Input group for labels and inputs */
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+/* Text, email, and password fields */
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Side-by-side name fields */
+.row {
+  display: flex;
+  gap: 40px;
+}
+
+/* Checkbox styling */
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  margin: 15px 0;
+}
+
+/* Button styling */
+.btn {
+  background: #635bff;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background: #4a42e2;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+  .row {
+    flex-direction: column;
+  }
+}
