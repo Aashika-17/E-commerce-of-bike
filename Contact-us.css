@@ -1,0 +1,118 @@
+/* Reset default margins */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main container */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;  /* Left and Right */
+  grid-template-rows: auto 1fr;   /* Heading + Content */
+  border-radius: 12px;
+  width: 90%;
+  max-width: 800px;
+  background: linear-gradient(to bottom, #0073e6, #87cefa);
+  padding: 30px;
+  gap: 20px;
+}
+
+/* Title spans across both columns */
+.title {
+  grid-column: span 2;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Left side */
+.left {
+  color: white;
+  padding: 20px;
+}
+
+.left h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.info {
+  background: rgba(255,255,255,0.3);
+  border-radius: 20px;
+  padding: 8px 16px;
+  margin: 10px 0;
+  color: red;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Contact bubble */
+.contact-bubble {
+  background: red;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 40px;
+  transform: rotate(-10deg);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Right side */
+.right {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Form fields */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #555;
+  font-size: 1rem;
+  outline: none;
+}
+
+textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: darkred;
+}
+
