@@ -1,0 +1,80 @@
+/* styles.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #ffffff;
+}
+.Outermost {
+  background: linear-gradient(135deg, #8e0000, #a00000);
+  width: 600px; /* fixed width */
+  max-width: 100%; /* never overflow viewport */
+  margin: 0 auto; /* center horizontally */
+}
+.signup-container {
+  padding: 30px;
+  max-width: 600px;
+  width: 100%;
+}
+.form-box {
+  background: white;
+  border-radius: 12px;
+  padding: 2em;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-box h1 {
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
+
+.input-group {
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.3em;
+  font-weight: 500;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.75em;
+  border: 2px solid #ccc;
+  border-radius: 999px;
+  font-size: 1em;
+  transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+  border-color: #006aff;
+  outline: none;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.85em;
+  background: #006aff;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 0.5em;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #0051cc;
+}

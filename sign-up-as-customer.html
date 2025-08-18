@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sign-Up Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- your stylesheets, scripts, etc. -->
+  <link rel="stylesheet" href="sign-up-as-a-customer.css">
+</head>
+
+<body>
+  <!-- your form markup -->
+  <div class="Outermost">
+    <div class="signup-container">
+      <div class="form-box">
+        <h1>Sign up to continue</h1>
+        <form id="signup-form">
+          <div class="input-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Jhône" required>
+          </div>
+          <div class="input-group">
+            <label for="email">E‑mail:</label>
+            <input type="email" id="email" name="email" placeholder="Jhône@gmail.com" required>
+          </div>
+          <div class="input-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="••••••••••••••••" minlength="8" required>
+          </div>
+          <button type="submit" class="btn">Sign up</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="signup.js"></script>
+</body>
+
+</html>
